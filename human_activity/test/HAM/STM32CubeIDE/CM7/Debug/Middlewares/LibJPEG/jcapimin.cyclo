@@ -1,0 +1,9 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapimin.c:31:1:jpeg_CreateCompress	3
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapimin.c:96:1:jpeg_destroy_compress	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapimin.c:108:1:jpeg_abort_compress	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapimin.c:127:1:jpeg_suppress_tables	6
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapimin.c:155:1:jpeg_finish_compress	8
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapimin.c:200:1:jpeg_write_marker	4
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapimin.c:222:1:jpeg_write_m_header	3
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapimin.c:234:1:jpeg_write_m_byte	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapimin.c:262:1:jpeg_write_tables	2

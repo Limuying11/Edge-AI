@@ -1,0 +1,8 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jmemnobs.c:29:1:jpeg_get_small	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jmemnobs.c:35:1:jpeg_free_small	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jmemnobs.c:49:1:jpeg_get_large	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jmemnobs.c:55:1:jpeg_free_large	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jmemnobs.c:67:1:jpeg_mem_available	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jmemnobs.c:81:1:jpeg_open_backing_store	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jmemnobs.c:94:1:jpeg_mem_init	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jmemnobs.c:100:1:jpeg_mem_term	1

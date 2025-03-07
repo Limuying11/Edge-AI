@@ -1,0 +1,13 @@
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:347:9:network_configure_activations	16	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:380:9:network_configure_weights	16	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:419:9:ai_network_get_info	160	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:466:9:ai_network_get_report	160	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:513:10:ai_network_get_error	16	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:520:10:ai_network_create	24	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:531:10:ai_network_create_and_init	88	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:566:12:ai_network_inputs_get	16	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:577:12:ai_network_outputs_get	16	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:588:11:ai_network_destroy	16	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:595:9:ai_network_init	24	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:612:8:ai_network_run	24	static
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/network.c:620:8:ai_network_forward	16	static

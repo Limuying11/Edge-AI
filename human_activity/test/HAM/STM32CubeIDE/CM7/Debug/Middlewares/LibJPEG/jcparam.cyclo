@@ -1,0 +1,11 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:169:1:add_huff_table	5
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:531:1:fill_dc_scans	4
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:24:1:jpeg_add_quant_table	8
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:91:1:jpeg_default_qtables	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:106:1:jpeg_set_linear_quality	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:123:1:jpeg_quality_scaling	4
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:149:1:jpeg_set_quality	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:413:1:jpeg_set_colorspace	10
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:381:1:jpeg_default_colorspace	6
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:285:1:jpeg_set_defaults	3
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcparam.c:559:1:jpeg_simple_progression	13

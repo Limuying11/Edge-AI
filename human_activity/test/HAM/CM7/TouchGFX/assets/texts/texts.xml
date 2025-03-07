@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.25.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_HM7S" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Stairs</Translation>
+      </Text>
+      <Text Id="__SingleUse_0T93" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Stationary</Translation>
+      </Text>
+      <Text Id="__SingleUse_YMFA" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Jogging</Translation>
+      </Text>
+      <Text Id="__SingleUse_R68E" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">walking</Translation>
+      </Text>
+      <Text Id="__SingleUse_YO4R" Alignment="Center" TypographyId="Typography_00">
+        <Translation Language="GB">STATE</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Typography_00" Font="ROGFonts-Regular.otf" Size="50" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

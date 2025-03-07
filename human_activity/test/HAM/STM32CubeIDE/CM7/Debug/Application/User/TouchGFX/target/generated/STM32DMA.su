@@ -1,0 +1,24 @@
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/hal/DMA.hpp:138:18:virtual void touchgfx::DMA_Interface::flush()	0	static
+../../../CM7/TouchGFX/target/generated/STM32DMA.hpp:112:31:virtual touchgfx::DMAType STM32DMA::getDMAType()	0	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:45:17:void DMA2D_XferErrorCallback(DMA2D_HandleTypeDef*)	0	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:152:16:virtual touchgfx::BlitOperations STM32DMA::getBlitCaps()	0	static
+../../../CM7/TouchGFX/target/generated/STM32DMA.hpp:174:18:virtual void STM32DMA::start()	8	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:61:1:STM32DMA::~STM32DMA()	0	static,ignoring_inline_asm
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:61:1:virtual STM32DMA::~STM32DMA()	8	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:67:6:virtual void STM32DMA::initialize()	8	static,ignoring_inline_asm
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:119:17:uint32_t STM32DMA::getChromARTOutputFormat(touchgfx::Bitmap::BitmapFormat)	8	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:342:6:virtual void STM32DMA::setupDataFill(const touchgfx::BlitOp&)	16	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:84:17:uint32_t STM32DMA::getChromARTInputFormat(touchgfx::Bitmap::BitmapFormat)	8	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:175:6:virtual void STM32DMA::setupDataCopy(const touchgfx::BlitOp&)	32	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:39:17:void DMA2D_XferCpltCallback(DMA2D_HandleTypeDef*)	0	static
+../../../CM7/TouchGFX/target/generated/STM32DMA.hpp:148:18:virtual void STM32DMA::signalDMAInterrupt()	8	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:55:1:STM32DMA::STM32DMA()	16	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:410:6:void touchgfx::paint::setL8Palette(const uint8_t*)	0	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:421:6:void touchgfx::paint::tearDown()	0	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:434:6:void touchgfx::paint::flushLine(uint32_t*, int)	0	static,ignoring_inline_asm
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:450:6:void touchgfx::paint::invalidateTextureCache()	0	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:462:6:void touchgfx::paint::rgb888::lineFromColor(uint8_t*, unsigned int, uint32_t, uint8_t)	12	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:512:6:void touchgfx::paint::rgb888::lineFromRGB888(uint8_t*, const uint8_t*, unsigned int, uint8_t)	12	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:556:6:void touchgfx::paint::rgb888::lineFromARGB8888(uint8_t*, const uint32_t*, unsigned int, uint8_t)	12	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:588:6:void touchgfx::paint::rgb888::lineFromL8RGB888(uint8_t*, const uint8_t*, unsigned int, uint8_t)	16	static
+F:/Touchgfx/HAM/CM7/TouchGFX/target/generated/STM32DMA.cpp:653:6:void touchgfx::paint::rgb888::lineFromL8ARGB8888(uint8_t*, const uint8_t*, unsigned int, uint8_t)	12	static

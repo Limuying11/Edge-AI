@@ -1,0 +1,179 @@
+ST Edge AI Core v2.0.0-20049
+Created date          : 2025-05-03 12:59:11
+Parameters            : generate --target stm32h7 --name network -m D:/Edge AI/human_activity/ign.h5 --compression medium --verbosity 1 --workspace C:/Users/ASUS/AppData/Local/Temp/mxAI_workspace12132517353400724206293280412058 --output C:/Users/ASUS/.stm32cubemx/network_output
+
+Exec/report summary (generate)
+---------------------------------------------------------------------------------------------------------
+model file         :   D:\Edge AI\human_activity\ign.h5                                                  
+type               :   keras                                                                             
+c_name             :   network                                                                           
+compression        :   medium                                                                            
+options            :   allocate-inputs, allocate-outputs                                                 
+optimization       :   balanced                                                                          
+target/series      :   stm32h7                                                                           
+workspace dir      :   C:\Users\ASUS\AppData\Local\Temp\mxAI_workspace12132517353400724206293280412058   
+output dir         :   C:\Users\ASUS\.stm32cubemx\network_output                                         
+model_fmt          :   float                                                                             
+model_name         :   ign                                                                               
+model_hash         :   0x20541b0ee0cac8df427950c53fad9e78                                                
+params #           :   3,064 items (11.97 KiB)                                                           
+---------------------------------------------------------------------------------------------------------
+input 1/1          :   'input_1', f32(1x24x3x1), 288 Bytes, activations                                  
+output 1/1         :   'dense_1', f32(1x4), 16 Bytes, activations                                        
+macc               :   14,404                                                                            
+weights (ro)       :   3,248 B (3.17 KiB) (1 segment) / -9,008(-73.5%) vs float model                    
+activations (rw)   :   2,080 B (2.03 KiB) (1 segment) *                                                  
+ram (total)        :   2,080 B (2.03 KiB) = 2,080 + 0 + 0                                                
+---------------------------------------------------------------------------------------------------------
+(*) 'input'/'output' buffers can be used from the activations buffer
+
+Model name - ign
+------ --------------------------------------- -------------------- -------------- -------- --------------- --- ----------------- ------------------- ------------------------------- 
+m_id   layer (type,original)                   oshape               param/size         macc    connected to   | c_size            c_macc              c_type                          
+------ --------------------------------------- -------------------- -------------- -------- --------------- --- ----------------- ------------------- ------------------------------- 
+0      input_1 (Input, InputLayer)             [b:1,h:24,w:3,c:1]                                             |                                       
+------ --------------------------------------- -------------------- -------------- -------- --------------- --- ----------------- ------------------- ------------------------------- 
+1      conv2d (Conv2D, Conv2D)                 [b:1,h:9,w:3,c:24]   408/1,632        10,392         input_1   | -1,632(-100.0%)   -10,392(-100.0%)    
+------ --------------------------------------- -------------------- -------------- -------- --------------- --- ----------------- ------------------- ------------------------------- 
+2      activation (Nonlinearity, Activation)   [b:1,h:9,w:3,c:24]                       648          conv2d   |                   -648(-100.0%)       
+------ --------------------------------------- -------------------- -------------- -------- --------------- --- ----------------- ------------------- ------------------------------- 
+3      max_pooling2d (Pool, MaxPooling2D)      [b:1,h:3,w:3,c:24]                       648      activation   | +1,632(+100.0%)   +11,040(+1703.7%)   Conv2D_[0]                      
+------ --------------------------------------- -------------------- -------------- -------- --------------- --- ----------------- ------------------- ------------------------------- 
+4      flatten (Reshape, Flatten)              [b:1,c:216]                                    max_pooling2d   |                                       
+------ --------------------------------------- -------------------- -------------- -------- --------------- --- ----------------- ------------------- ------------------------------- 
+5      dense (Dense, Dense)                    [b:1,c:12]           2,604/10,416      2,604         flatten   | -9,008(-86.5%)                        Dense_[1]                       
+------ --------------------------------------- -------------------- -------------- -------- --------------- --- ----------------- ------------------- ------------------------------- 
+7      dense_1_dense (Dense, Dense)            [b:1,c:4]            52/208               52           dense   |                   +60(+115.4%)        Dense_/Nonlinearity_[o][2, 3]   
+       dense_1 (Nonlinearity, Dense)           [b:1,c:4]                                 60   dense_1_dense   |                   -60(-100.0%)        
+------ --------------------------------------- -------------------- -------------- -------- --------------- --- ----------------- ------------------- ------------------------------- 
+model/c-model: macc=14,404/14,404  weights=12,256/3,248 -9,008(-73.5%) activations=--/2,080 io=--/0
+
+
+
+Generated C-graph summary
+------------------------------------------------------------------------------------------------------------------------
+model name            : ign
+c-name                : network
+c-node #              : 4
+c-array #             : 13
+activations size      : 2080 (1 segment)
+weights size          : 3248 (1 segment)
+macc                  : 14404
+inputs                : ['input_1_output']
+outputs               : ['dense_1_output']
+
+C-Arrays (13)
+------ ----------------------- ----------- ------------------------- ------------------ --------- 
+c_id   name (*_array)          item/size   domain/mem-pool           c-type             comment   
+------ ----------------------- ----------- ------------------------- ------------------ --------- 
+0      conv2d_bias             24/96       weights/weights           const float                  
+1      conv2d_output           216/864     activations/**default**   float                        
+2      conv2d_scratch0         16/64       activations/**default**   float                        
+3      conv2d_scratch1         216/864     activations/**default**   float                        
+4      conv2d_weights          384/1536    weights/weights           const float                  
+5      dense_1_dense_bias      4/16        weights/weights           const float                  
+6      dense_1_dense_output    4/16        activations/**default**   float                        
+7      dense_1_dense_weights   48/192      weights/weights           const float                  
+8      dense_1_output          4/16        activations/**default**   float              /output   
+9      dense_bias              12/48       weights/weights           const float                  
+10     dense_output            12/48       activations/**default**   float                        
+11     dense_weights           2592/1360   weights/weights           const lut4_float             
+12     input_1_output          72/288      activations/**default**   float              /input    
+------ ----------------------- ----------- ------------------------- ------------------ --------- 
+
+C-Layers (4)
+------ ---------------- ---- --------------- ------- ------ -------------------------- -------------------- 
+c_id   name (*_layer)   id   layer_type      macc    rom    tensors                    shape (array id)     
+------ ---------------- ---- --------------- ------- ------ -------------------------- -------------------- 
+0      conv2d           3    Conv2D          11688   1632   I: input_1_output          f32(1x24x3x1) (12)   
+                                                            S: conv2d_scratch0                              
+                                                            S: conv2d_scratch1                              
+                                                            W: conv2d_weights          f32(24x16x1x1) (4)   
+                                                            W: conv2d_bias             f32(24) (0)          
+                                                            O: conv2d_output           f32(1x3x3x24) (1)    
+------ ---------------- ---- --------------- ------- ------ -------------------------- -------------------- 
+1      dense            5    Dense           2604    1408   I: conv2d_output           f32(1x3x3x24) (1)    
+                                                            W: dense_weights           c4(12x216) (11)      
+                                                            W: dense_bias              f32(12) (9)          
+                                                            O: dense_output            f32(1x12) (10)       
+------ ---------------- ---- --------------- ------- ------ -------------------------- -------------------- 
+2      dense_1_dense    7    Dense           52      208    I: dense_output            f32(1x12) (10)       
+                                                            W: dense_1_dense_weights   f32(4x12) (7)        
+                                                            W: dense_1_dense_bias      f32(4) (5)           
+                                                            O: dense_1_dense_output    f32(1x4) (6)         
+------ ---------------- ---- --------------- ------- ------ -------------------------- -------------------- 
+3      dense_1          7    Nonlinearity    60      0      I: dense_1_dense_output    f32(1x4) (6)         
+                                                            O: dense_1_output          f32(1x4) (8)         
+------ ---------------- ---- --------------- ------- ------ -------------------------- -------------------- 
+
+
+
+Number of operations per c-layer
+------- ------ ------------------------ -------- -------------- 
+c_id    m_id   name (type)                   #op           type 
+------- ------ ------------------------ -------- -------------- 
+0       3      conv2d (Conv2D)            11,688   smul_f32_f32 
+1       5      dense (Dense)               2,604    smul_f32_f4 
+2       7      dense_1_dense (Dense)          52   smul_f32_f32 
+3       7      dense_1 (Nonlinearity)         60     op_f32_f32 
+------- ------ ------------------------ -------- -------------- 
+total                                     14,404 
+
+Number of operation types
+---------------- -------- ----------- 
+operation type          #           % 
+---------------- -------- ----------- 
+smul_f32_f32       11,740       81.5% 
+smul_f32_f4         2,604       18.1% 
+op_f32_f32             60        0.4% 
+
+Complexity report (model)
+------ --------------- ------------------------- ------------------------- -------- 
+m_id   name            c_macc                    c_rom                     c_id     
+------ --------------- ------------------------- ------------------------- -------- 
+3      max_pooling2d   ||||||||||||||||  81.1%   ||||||||||||||||  50.2%   [0]      
+5      dense           ||||              18.1%   |||||||||||||     43.3%   [1]      
+7      dense_1_dense   |                  0.8%   ||                 6.4%   [2, 3]   
+------ --------------- ------------------------- ------------------------- -------- 
+macc=14,404 weights=3,248 act=2,080 ram_io=0
+ 
+ Requested memory size by section - "stm32h7" target
+ ------------------------------ -------- -------- ------- ------- 
+ module                             text   rodata    data     bss 
+ ------------------------------ -------- -------- ------- ------- 
+ NetworkRuntime1000_CM7_GCC.a     11,144        0       0       0 
+ network.o                           552       32   1,716     160 
+ network_data.o                       48       16      88       0 
+ lib (toolchain)*                    318      328       0       0 
+ ------------------------------ -------- -------- ------- ------- 
+ RT total**                       12,062      376   1,804     160 
+ ------------------------------ -------- -------- ------- ------- 
+ weights                               0    3,248       0       0 
+ activations                           0        0       0   2,080 
+ io                                    0        0       0       0 
+ ------------------------------ -------- -------- ------- ------- 
+ TOTAL                            12,062    3,624   1,804   2,240 
+ ------------------------------ -------- -------- ------- ------- 
+ *  toolchain objects (libm/libgcc*)
+ ** RT AI runtime objects (kernels+infrastructure)
+  
+  Summary - "stm32h7" target
+  ---------------------------------------------------
+               FLASH (ro)      %*   RAM (rw)       % 
+  ---------------------------------------------------
+  RT total         14,242   81.4%      1,964   48.6% 
+  ---------------------------------------------------
+  TOTAL            17,490              4,044         
+  ---------------------------------------------------
+  *  rt/total
+
+
+Generated files (7)
+----------------------------------------------------------------- 
+C:\Users\ASUS\.stm32cubemx\network_output\network_data_params.h   
+C:\Users\ASUS\.stm32cubemx\network_output\network_data_params.c   
+C:\Users\ASUS\.stm32cubemx\network_output\network_data.h          
+C:\Users\ASUS\.stm32cubemx\network_output\network_data.c          
+C:\Users\ASUS\.stm32cubemx\network_output\network_config.h        
+C:\Users\ASUS\.stm32cubemx\network_output\network.h               
+C:\Users\ASUS\.stm32cubemx\network_output\network.c               

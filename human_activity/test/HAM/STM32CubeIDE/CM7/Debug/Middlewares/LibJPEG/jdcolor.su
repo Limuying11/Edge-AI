@@ -1,0 +1,10 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:91:1:build_ycc_rgb_table	24	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:141:1:ycc_rgb_convert	64	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:213:1:rgb_gray_convert	36	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:250:1:rgb_convert	24	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:282:1:null_convert	28	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:330:1:gray_rgb_convert	20	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:358:1:ycck_cmyk_convert	64	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:406:1:start_pass_dcolor	0	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:314:1:grayscale_convert	16	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcolor.c:417:1:jinit_color_deconverter	16	static

@@ -1,0 +1,6 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdapistd.c:95:1:output_pass_setup	6
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdapistd.c:38:1:jpeg_start_decompress	12
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdapistd.c:152:1:jpeg_read_scanlines	4
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdapistd.c:185:1:jpeg_read_raw_data	6
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdapistd.c:228:1:jpeg_start_output	4
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdapistd.c:253:1:jpeg_finish_output	7

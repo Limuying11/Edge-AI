@@ -1,0 +1,6 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdmaster.c:412:1:prepare_for_output_pass	13
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdmaster.c:472:1:finish_output_pass	2
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdmaster.c:45:1:use_merged_upsample	18
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdmaster.c:88:1:jpeg_calc_output_dimensions	14
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdmaster.c:489:1:jpeg_new_colormap	5
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdmaster.c:517:1:jinit_master_decompress	21

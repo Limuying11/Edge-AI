@@ -1,0 +1,227 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "main",
+        "Components": [
+          {
+            "Type": "CustomContainerInstance",
+            "Name": "customContainer11",
+            "Width": 800,
+            "Height": 480,
+            "CustomContainerDefinitionName": "CustomContainer1"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "state3",
+            "X": 261,
+            "Y": 160,
+            "Width": 278,
+            "Height": 51,
+            "Visible": false,
+            "TextId": "__SingleUse_R68E",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 30,
+              "Green": 144,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "state2",
+            "X": 281,
+            "Y": 160,
+            "Width": 239,
+            "Height": 51,
+            "Visible": false,
+            "TextId": "__SingleUse_HM7S",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 30,
+              "Green": 144,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "state1",
+            "X": 193,
+            "Y": 160,
+            "Width": 414,
+            "Height": 51,
+            "TextId": "__SingleUse_0T93",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 30,
+              "Green": 144,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "state0",
+            "X": 261,
+            "Y": 160,
+            "Width": 275,
+            "Height": 51,
+            "Visible": false,
+            "TextId": "__SingleUse_YMFA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 30,
+              "Green": 144,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "jogging",
+            "X": 328,
+            "Y": 267,
+            "Width": 140,
+            "Height": 138,
+            "Visible": false,
+            "Filename": "__generated\\icon_theme_images_maps_run_circle_50_50_1E90FF.svg.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "stairs",
+            "X": 328,
+            "Y": 267,
+            "Width": 140,
+            "Height": 138,
+            "Visible": false,
+            "Filename": "__generated\\icon_theme_images_places_stairs_50_50_1E90FF.svg.png",
+            "ScalingAlgorithm": "Bilinear Interpolation"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "stationary",
+            "X": 328,
+            "Y": 267,
+            "Width": 140,
+            "Height": 138,
+            "Filename": "__generated\\icon_theme_images_action_accessible_50_50_1E90FF.svg.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "walking",
+            "X": 328,
+            "Y": 267,
+            "Width": 140,
+            "Height": 138,
+            "Visible": false,
+            "Filename": "__generated\\icon_theme_images_maps_directions_walk_50_50_1E90FF.svg.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Name": "CustomContainer1",
+        "Width": 800,
+        "Height": 480,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 800,
+            "Height": 480,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "title",
+            "X": 290,
+            "Y": 52,
+            "Width": 220,
+            "Height": 51,
+            "TextId": "__SingleUse_YO4R",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 30,
+              "Green": 144,
+              "Blue": 255
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "Name": "HAM",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "main",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      24
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp",
+      "24": "LCD24bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD24bpp": {
+        "Id": "LCD24bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../../gcc/Makefile flash",
+    "FlashTargetIntCommandOverride": "make -f ../../gcc/Makefile intflash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H747/757",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../../STM32H747I-DISCO.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.25.0",
+  "CreatedBy": "4.25.0"
+}

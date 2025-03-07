@@ -1,0 +1,3 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapistd.c:38:1:jpeg_start_compress	3
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapistd.c:77:1:jpeg_write_scanlines	5
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jcapistd.c:120:1:jpeg_write_raw_data	7

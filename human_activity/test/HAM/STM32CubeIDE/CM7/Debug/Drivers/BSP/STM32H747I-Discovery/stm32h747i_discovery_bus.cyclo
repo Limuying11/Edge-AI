@@ -1,0 +1,9 @@
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_bus.c:241:9:BSP_I2C4_DeInit	3
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_bus.c:268:26:MX_I2C4_Init	3
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_bus.c:190:9:BSP_I2C4_Init	24
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_bus.c:314:9:BSP_I2C4_WriteReg	2
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_bus.c:351:9:BSP_I2C4_ReadReg	2
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_bus.c:388:9:BSP_I2C4_WriteReg16	2
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_bus.c:425:9:BSP_I2C4_ReadReg16	2
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_bus.c:461:9:BSP_I2C4_IsReady	1
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_bus.c:483:9:BSP_GetTick	1

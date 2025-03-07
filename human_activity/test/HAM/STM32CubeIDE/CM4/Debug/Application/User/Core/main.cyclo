@@ -1,0 +1,14 @@
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:135:1:__io_putchar	1
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:147:5:main	14
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:287:13:MX_I2C4_Init	4
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:335:13:MX_USART1_UART_Init	5
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:381:13:MX_MDMA_Init	1
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:395:13:MX_GPIO_Init	1
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:417:6:I2C_Scan	3
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:440:19:MPU6500_TestConnection	1
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:450:9:MPU6500_Init	8
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:532:9:MPU6500_ReadID	1
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:541:9:MPU6500_ReadReg	1
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:560:9:MPU6500_WriteReg	2
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:578:6:MPU6500_ReadAccel	2
+F:/Touchgfx/HAM/CM4/Core/Src/main.c:612:6:Error_Handler	1

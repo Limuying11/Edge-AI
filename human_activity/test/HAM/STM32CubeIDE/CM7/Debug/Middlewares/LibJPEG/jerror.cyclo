@@ -1,0 +1,6 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jerror.c:98:1:output_message	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jerror.c:129:1:emit_message	5
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jerror.c:213:1:reset_error_mgr	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jerror.c:158:1:format_message	10
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jerror.c:70:1:error_exit	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jerror.c:232:1:jpeg_std_error	1

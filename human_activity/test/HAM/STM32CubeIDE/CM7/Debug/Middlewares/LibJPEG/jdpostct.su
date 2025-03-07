@@ -1,0 +1,5 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdpostct.c:73:1:start_pass_dpost	24	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdpostct.c:126:1:post_process_1pass	56	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdpostct.c:158:1:post_process_prepass	56	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdpostct.c:202:1:post_process_2pass	40	static
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdpostct.c:250:1:jinit_d_post_controller	32	static

@@ -1,0 +1,5 @@
+../../CM7/../../CM7/TouchGFX/gui/include/gui/main_screen/mainPresenter.hpp:28:13:mainPresenter::~mainPresenter()	0	static
+F:/Touchgfx/HAM/CM7/TouchGFX/gui/src/main_screen/mainPresenter.cpp:10:6:virtual void mainPresenter::activate()	0	static
+../../CM7/../../CM7/TouchGFX/gui/include/gui/main_screen/mainPresenter.hpp:28:13:virtual mainPresenter::~mainPresenter()	8	static
+../../CM7/../../CM7/TouchGFX/gui/include/gui/main_screen/mainPresenter.hpp:28:13:virtual void* mainPresenter::_ZThn4_N13mainPresenterD1Ev()	0	static
+F:/Touchgfx/HAM/CM7/TouchGFX/gui/src/main_screen/mainPresenter.cpp:4:1:mainPresenter::mainPresenter(mainView&)	0	static

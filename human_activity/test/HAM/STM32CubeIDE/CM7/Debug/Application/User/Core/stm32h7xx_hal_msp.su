@@ -1,0 +1,15 @@
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:67:6:HAL_MspInit	8	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:91:6:HAL_CRC_MspInit	8	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:114:6:HAL_CRC_MspDeInit	0	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:136:6:HAL_DMA2D_MspInit	16	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:162:6:HAL_DMA2D_MspDeInit	0	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:187:6:HAL_DSI_MspInit	240	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:243:6:HAL_DSI_MspDeInit	8	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:279:6:HAL_JPEG_MspInit	24	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:363:6:HAL_JPEG_MspDeInit	8	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:392:6:HAL_LTDC_MspInit	216	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:436:6:HAL_LTDC_MspDeInit	0	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:461:6:HAL_QSPI_MspInit	272	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:563:6:HAL_QSPI_MspDeInit	8	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:755:6:HAL_SDRAM_MspInit	248	static
+F:/Touchgfx/HAM/CM7/Core/Src/stm32h7xx_hal_msp.c:866:6:HAL_SDRAM_MspDeInit	8	static

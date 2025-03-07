@@ -1,0 +1,9 @@
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcoefct.c:80:1:start_iMCU_row	3
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcoefct.c:108:1:start_input_pass	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcoefct.c:230:1:dummy_consume_data	1
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcoefct.c:246:1:consume_data	9
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcoefct.c:317:1:decompress_data	10
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcoefct.c:120:1:start_output_pass	17
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcoefct.c:148:1:decompress_onepass	13
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcoefct.c:463:1:decompress_smooth_data	53
+F:/Touchgfx/HAM/Middlewares/Third_Party/LibJPEG/source/jdcoefct.c:678:1:jinit_d_coef_controller	6

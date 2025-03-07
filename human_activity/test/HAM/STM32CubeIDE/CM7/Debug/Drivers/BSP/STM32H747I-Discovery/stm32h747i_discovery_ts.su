@@ -1,0 +1,14 @@
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:121:9:BSP_TS_Init	80	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:172:9:BSP_TS_DeInit	8	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:201:9:BSP_TS_GetCapabilities	8	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:223:9:BSP_TS_EnableIT	32	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:269:9:BSP_TS_DisableIT	8	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:305:13:BSP_TS_Callback	0	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:676:13:TS_EXTI_Callback	8	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:320:9:BSP_TS_GetState	40	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:406:9:BSP_TS_Get_MultiTouchState	144	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:497:9:BSP_TS_GestureConfig	8	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:522:9:BSP_TS_GetGestureId	16	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:579:9:BSP_TS_Set_Orientation	0	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:591:9:BSP_TS_Get_Orientation	0	static
+F:/Touchgfx/HAM/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:602:6:BSP_TS_IRQHandler	0	static

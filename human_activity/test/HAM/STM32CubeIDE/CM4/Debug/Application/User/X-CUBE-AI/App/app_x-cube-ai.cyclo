@@ -1,0 +1,7 @@
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/app_x-cube-ai.c:101:13:ai_log_err	2
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/app_x-cube-ai.c:114:12:ai_boostrap	4
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/app_x-cube-ai.c:157:12:ai_run	2
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/app_x-cube-ai.c:171:5:acquire_and_process_data	1
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/app_x-cube-ai.c:179:5:post_process	4
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/app_x-cube-ai.c:201:6:MX_X_CUBE_AI_Init	1
+F:/Touchgfx/HAM/CM4/X-CUBE-AI/App/app_x-cube-ai.c:210:6:MX_X_CUBE_AI_Process	4
