@@ -1,0 +1,5 @@
+../../CM7/../../CM7/TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:28:13:Screen1Presenter::~Screen1Presenter()	1
+F:/Touchgfx/Com/CM7/TouchGFX/gui/src/screen1_screen/Screen1Presenter.cpp:10:6:virtual void Screen1Presenter::activate()	1
+../../CM7/../../CM7/TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:28:13:virtual Screen1Presenter::~Screen1Presenter()	1
+../../CM7/../../CM7/TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:28:13:virtual void* Screen1Presenter::_ZThn4_N16Screen1PresenterD1Ev()	1
+F:/Touchgfx/Com/CM7/TouchGFX/gui/src/screen1_screen/Screen1Presenter.cpp:4:1:Screen1Presenter::Screen1Presenter(Screen1View&)	1

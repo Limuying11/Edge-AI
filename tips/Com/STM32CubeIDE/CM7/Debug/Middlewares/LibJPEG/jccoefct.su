@@ -1,0 +1,6 @@
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jccoefct.c:73:1:start_iMCU_row	0	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jccoefct.c:101:1:start_pass_coef	16	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jccoefct.c:346:1:compress_output	96	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jccoefct.c:249:1:compress_first_pass	96	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jccoefct.c:144:1:compress_data	104	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jccoefct.c:410:1:jinit_c_coef_controller	40	static

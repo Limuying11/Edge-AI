@@ -1,0 +1,15 @@
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:126:9:FT6X06_GetCapabilities	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:182:9:FT6X06_DeInit	2
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:349:9:FT6X06_ITStatus	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:505:16:ReadRegWrap	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:520:16:WriteRegWrap	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:199:9:FT6X06_GestureConfig	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:225:9:FT6X06_ReadID	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:242:9:FT6X06_GetState	3
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:314:9:FT6X06_GetGesture	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:325:9:FT6X06_EnableIT	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:336:9:FT6X06_DisableIT	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:147:9:FT6X06_Init	2
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:365:9:FT6X06_ClearIT	1
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:269:9:FT6X06_GetMultiTouchState	3
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:86:9:FT6X06_RegisterBusIO	3

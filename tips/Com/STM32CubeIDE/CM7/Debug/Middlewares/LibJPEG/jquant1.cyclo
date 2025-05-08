@@ -1,0 +1,11 @@
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:334:1:create_colorindex	8
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:460:1:color_quantize	4
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:488:1:color_quantize3	3
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:566:1:quantize3_ord_dither	3
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:723:1:alloc_fs_workspace	2
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:799:1:finish_pass_1_quant	1
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:811:1:new_color_map_1_quant	1
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:742:1:start_pass_1_quant	16
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:611:1:quantize_fs_dither	5
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:516:1:quantize_ord_dither	4
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jquant1.c:822:1:jinit_1pass_quantizer	17

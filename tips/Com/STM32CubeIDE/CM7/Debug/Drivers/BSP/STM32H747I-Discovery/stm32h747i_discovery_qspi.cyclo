@@ -1,0 +1,13 @@
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:267:26:MX_QSPI_Init	1
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:365:9:BSP_QSPI_Read	5
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:404:9:BSP_QSPI_Write	8
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:474:9:BSP_QSPI_EraseBlock	5
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:513:9:BSP_QSPI_EraseChip	5
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:553:9:BSP_QSPI_GetStatus	3
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:589:9:BSP_QSPI_GetInfo	2
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:613:9:BSP_QSPI_EnableMemoryMappedMode	5
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:658:9:BSP_QSPI_DisableMemoryMappedMode	6
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:218:9:BSP_QSPI_DeInit	4
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:709:9:BSP_QSPI_ReadID	2
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:739:9:BSP_QSPI_ConfigFlash	9
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_qspi.c:133:9:BSP_QSPI_Init	17

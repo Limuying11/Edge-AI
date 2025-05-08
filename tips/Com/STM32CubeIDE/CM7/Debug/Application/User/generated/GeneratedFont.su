@@ -1,0 +1,36 @@
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:200:30:virtual const touchgfx::GlyphNode* touchgfx::Font::getGlyph(touchgfx::Unicode::UnicodeChar) const	16	static
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:219:34:virtual touchgfx::Unicode::UnicodeChar touchgfx::Font::getFallbackChar() const	0	static
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:232:34:virtual touchgfx::Unicode::UnicodeChar touchgfx::Font::getEllipsisChar() const	0	static
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:331:44:virtual uint16_t touchgfx::Font::getBaseline() const	0	static
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:351:44:virtual uint16_t touchgfx::Font::getHeight() const	0	static
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:382:43:virtual uint8_t touchgfx::Font::getBitsPerPixel() const	0	static
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:392:43:virtual uint8_t touchgfx::Font::getByteAlignRow() const	0	static
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:471:18:virtual bool touchgfx::Font::isVectorBasedFont() const	0	static
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp:481:19:virtual float touchgfx::Font::getScaleFactor() const	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:22:29:virtual const uint16_t* touchgfx::GeneratedFont::getGSUBTable() const	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:27:45:virtual const touchgfx::FontContextualFormsTable* touchgfx::GeneratedFont::getContextualFormsTable() const	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:11:7:touchgfx::GeneratedFont::~GeneratedFont()	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:104:18:virtual bool touchgfx::GeneratedVectorFont::isVectorBasedFont() const	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:106:19:virtual float touchgfx::GeneratedVectorFont::getScaleFactor() const	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:108:29:virtual const uint16_t* touchgfx::GeneratedVectorFont::getGSUBTable() const	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:110:45:virtual const touchgfx::FontContextualFormsTable* touchgfx::GeneratedVectorFont::getContextualFormsTable() const	0	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:20:16:virtual const uint8_t* touchgfx::GeneratedFont::getPixelData(const touchgfx::GlyphNode*) const	8	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:32:8:virtual int8_t touchgfx::GeneratedFont::getKerning(touchgfx::Unicode::UnicodeChar, const touchgfx::GlyphNode*) const	8	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:176:8:virtual int8_t touchgfx::GeneratedVectorFont::getKerning(touchgfx::Unicode::UnicodeChar, const touchgfx::GlyphNode*) const	16	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:215:7:touchgfx::CompressedMappedFont::~CompressedMappedFont()	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:91:7:touchgfx::GeneratedVectorFont::~GeneratedVectorFont()	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:45:7:touchgfx::FusedFont::~FusedFont()	0	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:54:18:virtual const touchgfx::GlyphNode* touchgfx::FusedFont::getGlyph(touchgfx::Unicode::UnicodeChar, const uint8_t*&, uint8_t&) const	20	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:292:18:virtual const touchgfx::GlyphNode* touchgfx::CompressedMappedFont::getGlyph(touchgfx::Unicode::UnicodeChar) const	0	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:91:7:virtual touchgfx::GeneratedVectorFont::~GeneratedVectorFont()	8	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:11:7:virtual touchgfx::GeneratedFont::~GeneratedFont()	8	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:215:7:virtual touchgfx::CompressedMappedFont::~CompressedMappedFont()	8	static
+../../CM7/../../CM7/TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp:45:7:virtual touchgfx::FusedFont::~FusedFont()	8	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:297:16:virtual const uint8_t* touchgfx::CompressedMappedFont::getPixelData(const touchgfx::GlyphNode*) const	16	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:11:1:touchgfx::GeneratedFont::GeneratedFont(const touchgfx::GlyphNode*, uint16_t, uint16_t, uint16_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, const uint8_t* const*, const touchgfx::KerningNode*, touchgfx::Unicode::UnicodeChar, touchgfx::Unicode::UnicodeChar, const uint16_t*, const touchgfx::FontContextualFormsTable*)	56	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:71:1:touchgfx::GeneratedVectorFont::GeneratedVectorFont(uint16_t, float, const touchgfx::VectorFontNode*, const touchgfx::VectorFontData&, const uint16_t* const*, const touchgfx::VectorKerningNode*, const uint16_t*, const touchgfx::FontContextualFormsTable*)	20	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:123:18:const touchgfx::GlyphNode* touchgfx::GeneratedVectorFont::getGlyphNode(const touchgfx::VectorFontNode*) const	8	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:199:23:const touchgfx::VectorFontNode* touchgfx::GeneratedVectorFont::find(touchgfx::Unicode::UnicodeChar) const	20	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:94:18:virtual const touchgfx::GlyphNode* touchgfx::GeneratedVectorFont::getGlyph(touchgfx::Unicode::UnicodeChar) const	8	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:107:18:virtual const touchgfx::GlyphNode* touchgfx::GeneratedVectorFont::getGlyph(touchgfx::Unicode::UnicodeChar, const uint8_t*&, uint8_t&) const	24	static
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/GeneratedFont.cpp:287:1:touchgfx::CompressedMappedFont::CompressedMappedFont(const touchgfx::GlyphNode*, uint16_t, uint16_t, uint16_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, const uint8_t* const*, const touchgfx::KerningNode*, touchgfx::Unicode::UnicodeChar, touchgfx::Unicode::UnicodeChar, const uint16_t*, const touchgfx::FontContextualFormsTable*)	56	static

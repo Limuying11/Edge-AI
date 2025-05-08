@@ -1,0 +1,15 @@
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:126:9:FT6X06_GetCapabilities	0	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:182:9:FT6X06_DeInit	0	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:349:9:FT6X06_ITStatus	0	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:505:16:ReadRegWrap	4	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:520:16:WriteRegWrap	4	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:199:9:FT6X06_GestureConfig	16	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:225:9:FT6X06_ReadID	16	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:242:9:FT6X06_GetState	24	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:314:9:FT6X06_GetGesture	0	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:325:9:FT6X06_EnableIT	0	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:336:9:FT6X06_DisableIT	0	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:147:9:FT6X06_Init	8	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:365:9:FT6X06_ClearIT	0	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:269:9:FT6X06_GetMultiTouchState	32	static
+F:/Touchgfx/Com/Drivers/BSP/Components/ft6x06/ft6x06.c:86:9:FT6X06_RegisterBusIO	0	static

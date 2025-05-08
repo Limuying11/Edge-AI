@@ -1,0 +1,8 @@
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatadst.c:66:1:init_destination	1
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatadst.c:81:1:init_mem_destination	1
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatadst.c:181:1:term_mem_destination	1
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatadst.c:111:1:empty_output_buffer	2
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatadst.c:127:1:empty_mem_output_buffer	3
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatadst.c:167:1:term_destination	3
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatadst.c:197:1:jpeg_stdio_dest	2
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatadst.c:233:1:jpeg_mem_dest	7

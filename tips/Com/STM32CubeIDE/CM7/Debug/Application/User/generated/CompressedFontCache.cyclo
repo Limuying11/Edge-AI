@@ -1,0 +1,7 @@
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/CompressedFontCache.cpp:28:13:uint8_t touchgfx::{anonymous}::NibReader::getNext()	2
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/CompressedFontCache.cpp:51:10:void touchgfx::{anonymous}::NibWriter::put(uint8_t)	2
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/CompressedFontCache.cpp:67:10:static uint8_t* touchgfx::CompressedFontCache::decompressGlyph(uint8_t*, const touchgfx::GlyphNode*, const uint8_t*)	11
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/CompressedFontCache.cpp:122:6:static void touchgfx::CompressedFontCache::clearCache()	1
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/CompressedFontCache.cpp:131:6:static void touchgfx::CompressedFontCache::unableToCache(const touchgfx::GlyphNode*, int)	1
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/CompressedFontCache.cpp:136:16:static const uint8_t* touchgfx::CompressedFontCache::hasCachedGlyph(const touchgfx::GlyphNode*)	3
+F:/Touchgfx/Com/CM7/TouchGFX/generated/fonts/src/CompressedFontCache.cpp:151:16:static const uint8_t* touchgfx::CompressedFontCache::cacheGlyph(const touchgfx::GlyphNode*, const uint8_t*)	3

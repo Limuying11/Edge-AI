@@ -1,0 +1,10 @@
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:102:9:IS42S32800J_ClockEnable	1
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:126:9:IS42S32800J_Precharge	1
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:150:9:IS42S32800J_ModeRegConfig	1
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:183:9:IS42S32800J_TimingConfig	1
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:204:9:IS42S32800J_RefreshMode	1
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:228:9:IS42S32800J_RefreshRate	1
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:64:9:IS42S32800J_Init	6
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:247:9:IS42S32800J_EnterPowerMode	1
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:271:9:IS42S32800J_ExitPowerMode	1
+F:/Touchgfx/Com/Drivers/BSP/Components/is42s32800j/is42s32800j.c:295:9:IS42S32800J_Sendcmd	1

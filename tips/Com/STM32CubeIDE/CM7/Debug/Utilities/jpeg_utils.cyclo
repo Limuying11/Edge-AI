@@ -1,0 +1,13 @@
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:417:17:JPEG_ARGB_MCU_YCbCr420_ConvertBlocks	4
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:562:17:JPEG_ARGB_MCU_YCbCr422_ConvertBlocks	4
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:675:17:JPEG_ARGB_MCU_YCbCr444_ConvertBlocks	4
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:766:17:JPEG_ARGB_MCU_Gray_ConvertBlocks	4
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:1099:17:JPEG_MCU_YCbCr420_ARGB_ConvertBlocks	7
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:1283:17:JPEG_MCU_YCbCr422_ARGB_ConvertBlocks	6
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:1414:17:JPEG_MCU_YCbCr444_ARGB_ConvertBlocks	5
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:1519:17:JPEG_MCU_Gray_ARGB_ConvertBlocks	5
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:1596:17:JPEG_MCU_YCCK_ARGB_ConvertBlocks	5
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:854:17:JPEG_ARGB_MCU_YCCK_ConvertBlocks	13
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:944:19:JPEG_GetEncodeColorConvertFunc	18
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:1689:19:JPEG_GetDecodeColorConvertFunc	13
+F:/Touchgfx/Com/Utilities/JPEG/jpeg_utils.c:1819:6:JPEG_InitColorTables	12

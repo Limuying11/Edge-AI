@@ -1,0 +1,14 @@
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:218:1:out_of_memory	1
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:724:1:do_barray_io	4
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:258:1:alloc_small	10
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:554:1:request_virt_barray	2
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:524:1:request_virt_sarray	2
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:931:1:free_pool	9
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:1003:1:self_destruct	1
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:842:1:access_virt_barray	17
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:343:1:alloc_large	5
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:444:1:alloc_barray	4
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:396:1:alloc_sarray	4
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:584:1:realize_virt_arrays	13
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:757:1:access_virt_sarray	21
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jmemmgr.c:1029:1:jinit_memory_mgr	2

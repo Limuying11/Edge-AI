@@ -1,0 +1,12 @@
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:465:1:jpeg_fill_bit_buffer	12
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:592:1:jpeg_huff_decode	7
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:636:1:process_restart	5
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:695:1:decode_mcu_DC_first	15
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:766:1:decode_mcu_AC_first	20
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:855:1:decode_mcu_DC_refine	8
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:904:1:decode_mcu_AC_refine	38
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:1059:1:decode_mcu_sub	40
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:1187:1:decode_mcu	40
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:323:1:jpeg_make_d_derived_tbl	19
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:1310:1:start_pass_huff_decoder	37
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdhuff.c:1509:1:jinit_huff_decoder	3

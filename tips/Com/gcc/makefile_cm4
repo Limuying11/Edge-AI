@@ -1,0 +1,292 @@
+# Helper macros to convert spaces into question marks and back again
+e :=
+sp := $(e) $(e)
+qs = $(subst ?,$(sp),$1)
+sq = $(subst $(sp),?,$1)
+
+# Get name of this Makefile (avoid getting word 0 and a starting space)
+makefile_name := $(wordlist 1,1000,$(MAKEFILE_LIST))
+
+# Get path of this Makefile
+makefile_path := $(call qs,$(dir $(call sq,$(abspath $(call sq,$(makefile_name))))))
+
+# Get path where the Application is
+application_path := $(call qs,$(abspath $(call sq,$(makefile_path)..)))
+
+# Change makefile_name to a relative path
+makefile_name := $(subst $(call sq,$(application_path))/,,$(call sq,$(abspath $(call sq,$(makefile_name)))))
+
+# Get relative path to makefile from application_path
+makefile_path_relative := $(subst $(call sq,$(application_path))/,,$(call sq,$(abspath $(call sq,$(makefile_path)))))
+
+# Get path to Drivers
+Drivers_path := Drivers
+
+# Get identification of this system
+ifeq ($(OS),Windows_NT)
+UNAME := MINGW32_NT-6.2
+else
+UNAME := $(shell uname -s)
+endif
+
+board_name := STM32H747I_DISCO
+platform := cortex_m4
+
+.PHONY: all clean assets flash intflash
+
+all: $(filter clean,$(MAKECMDGOALS))
+all clean assets:
+	@cd "$(application_path)" && $(MAKE) -r -f $(makefile_name) -s $(MFLAGS) _$@_
+
+flash intflash: all
+	@cd "$(application_path)" && $(MAKE) -r -f $(makefile_name) -s $(MFLAGS) _$@_
+
+build_root_path := CM4/TouchGFX/build
+object_output_path := $(build_root_path)/$(board_name)
+binary_output_path := $(build_root_path)/bin
+
+ifeq ($(UNAME), Linux)
+else
+stldr := MT25TL01G_STM32H747I-DISCO.stldr
+include $(application_path)/gcc/include/cube_programmer.mk
+endif
+
+target_executable := target.elf
+target_hex := target.hex
+
+assembler    := arm-none-eabi-gcc
+c_compiler   := arm-none-eabi-gcc
+cpp_compiler := arm-none-eabi-g++
+linker       := arm-none-eabi-g++
+objcopy      := arm-none-eabi-objcopy
+archiver     := arm-none-eabi-ar
+strip        := arm-none-eabi-strip
+
+assembler_options += \
+	-MMD \
+	-MP \
+	-Wall \
+	-c \
+	-fno-exceptions \
+	-g \
+	-mthumb \
+	-x assembler-with-cpp 
+
+c_compiler_options += \
+	--specs=nano.specs \
+	-MMD \
+	-MP \
+	-Os \
+	-Wall \
+	-fdata-sections \
+	-fdata-sections \
+	-ffunction-sections \
+	-fno-exceptions \
+	-fstack-usage \
+	-g \
+	-mthumb \
+	-std=gnu11 
+
+cpp_compiler_options += \
+	--specs=nano.specs \
+	-MMD \
+	-MP \
+	-Os \
+	-fdata-sections \
+	-ffunction-sections \
+	-fno-exceptions \
+	-fno-rtti \
+	-g \
+	-mthumb \
+	-std=gnu++14 
+
+linker_options += \
+	--specs=nosys.specs \
+	-Os \
+	-Wl,--gc-sections -static \
+	-Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group \
+	-fno-exceptions \
+	-fno-rtti \
+	-g \
+	-mthumb 
+
+# Additional toolchain configuration for Cortex-M4 targets.
+float_options := -mfpu=fpv5-sp-d16 -mfloat-abi=hard
+
+assembler_options    += $(float_options) -mcpu=cortex-m4 -DCORE_CM4 -DUSE_PWR_DIRECT_SMPS_SUPPLY
+c_compiler_options   += $(float_options) -mcpu=cortex-m4 -DCORE_CM4 -DUSE_PWR_DIRECT_SMPS_SUPPLY
+cpp_compiler_options += $(float_options) -mcpu=cortex-m4 -DCORE_CM4 -DUSE_PWR_DIRECT_SMPS_SUPPLY
+linker_options       += $(float_options) -mcpu=cortex-m4 
+   
+c_compiler_options   += -DST -DSTM32H747xx -DUSE_HAL_DRIVER -DUSE_STM32H747I_DISCO -DUSE_PWR_LDO_SUPPLY__N -DUSE_FLOATING_POINT 
+cpp_compiler_options += -DST -DSTM32H747xx -DUSE_HAL_DRIVER -DUSE_STM32H747I_DISCO -DUSE_PWR_LDO_SUPPLY__N -DUSE_FLOATING_POINT 
+
+# Drivers/STM32H7xx_HAL_Driver
+source_files := \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_crc_ex.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma2d.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dsi.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc_ex.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_qspi.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sdram.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c 
+
+source_files += \
+    CM4/Core/Src/main.c \
+	CM4/Core/Src/stm32h7xx_it.c \
+	CM4/Core/Src/stm32h7xx_hal_msp.c \
+	STM32CubeIDE/CM4/Application/User/Core/syscalls.c \
+    STM32CubeIDE/CM4/Application/User/Core/sysmem.c 
+
+source_files += \
+	Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c \
+
+# Drivers
+board_include_paths := \
+	$(Drivers_path)/BSP/STM32H747I-Discovery \
+	$(Drivers_path)/CMSIS/Include \
+	$(Drivers_path)/CMSIS/Device/ST/STM32H7xx/Include \
+	$(Drivers_path)/STM32H7xx_HAL_Driver/Inc \
+    CM4/Core/Inc
+
+asm_source_files := \
+	STM32CubeIDE/CM4/Application/User/Startup/startup_stm32h747xihx.s
+
+include_paths += platform/os $(board_include_paths) $(os_include_paths)
+
+c_source_files := $(call find, $(source_paths),*.c) $(os_source_files) $(board_c_files)
+source_files += $(board_cpp_files)
+object_files := $(source_files) $(c_source_files)
+
+# start converting paths
+object_files := $(object_files:%.cpp=$(object_output_path)/%.o)
+object_files := $(object_files:%.c=$(object_output_path)/%.o)
+object_files := $(object_files:$(Drivers_path)/%.c=$(object_output_path)/Drivers/%.o)
+
+# remove templates files
+# object_files := $(filter-out %template.o,$(object_files))
+
+dependency_files := $(object_files:%.o=%.d)
+
+object_asm_files := $(asm_source_files:%.s=$(object_output_path)/%.o)
+object_asm_files := $(patsubst $(object_output_path)/%,$(object_output_path)/%,$(object_asm_files))
+
+.PHONY: _all_ _clean_ _assets_ _flash_ _intflash_ generate_assets build_executable
+
+# Force linking each time
+.PHONY: $(binary_output_path)/$(target_executable)
+
+_all_: generate_assets
+
+# if ExtFlashSection or FontFlashSection is detected inside the executable, enable external flash
+flash_section_count := 0
+elf_filename := "$(application_path)/$(binary_output_path)/$(target_executable)"
+ifeq ($(shell test -e $(elf_filename) && echo -n has_elf_file),has_elf_file)
+flash_section_count := $(shell readelf -S $(elf_filename) | grep FlashSection | wc -l)
+endif
+
+ifeq ($(shell test $(flash_section_count) -gt 0; echo $$?),0)
+_flash_: _extflash_
+else
+_flash_: _intflash_
+endif
+
+include $(application_path)/gcc/include/flash_sections_int_ext.mk
+
+generate_assets: _assets_
+	@$(MAKE) -f $(makefile_name) -r -s $(MFLAGS) build_executable
+    
+build_executable: $(binary_output_path)/$(target_executable)
+
+$(binary_output_path)/$(target_executable): $(object_files) $(object_asm_files)
+	# @echo $(object_files)
+	@echo Linking $(@)
+	@mkdir -p $(@D)
+	@mkdir -p $(object_output_path)
+	@$(file >$(build_root_path)/objects.tmp) $(foreach F,$(object_files),$(file >>$(build_root_path)/objects.tmp,$F))
+	@$(linker) \
+		$(linker_options) -T $(makefile_path_relative)/STM32H747XIHx_FLASH_CM4.ld -Wl,-Map=$(@D)/application.map \
+		$(patsubst %,-L%,$(library_include_paths)) \
+		@$(build_root_path)/objects.tmp $(object_asm_files) -o $@ \
+		-Wl,--start-group -Wl,--end-group
+	@rm -f $(build_root_path)/objects.tmp
+	@echo "Producing additional output formats..."
+	@echo "  target.hex   - Combined internal+external hex"
+	@$(objcopy) -O ihex $@ $(@D)/target.hex
+	@echo "  intflash.elf - Internal flash, elf debug"
+	@$(objcopy) --remove-section=ExtFlashSection $@ $(@D)/intflash.elf 2>/dev/null
+	@echo "  intflash.hex - Internal flash, hex"
+	@$(objcopy) -O ihex --remove-section=ExtFlashSection $@ $(@D)/intflash.hex
+	# Re-enable the lines below if your workflow requires extflash.bin files
+	# @echo "  extflash.bin - External flash, binary"
+	# @$(objcopy) -O binary --only-section=ExtFlashSection $@ $(@D)/extflash.bin
+
+$(object_output_path)/touchgfx/%.o: $(touchgfx_path)/%.cpp 
+	@echo Compiling $<
+	@mkdir -p $(@D)
+	@$(cpp_compiler) \
+		-MMD -MP $(cpp_compiler_options) $(user_cflags) \
+		$(patsubst %,-I%,$(include_paths)) \
+		-c $< -o $@
+
+$(object_output_path)/%.o: %.cpp 
+	@echo Compiling $<
+	@mkdir -p $(@D)
+	@$(cpp_compiler) \
+		-MMD -MP $(cpp_compiler_options) $(user_cflags) \
+		$(patsubst %,-I%,$(include_paths)) \
+		-c $< -o $@
+
+$(object_output_path)/touchgfx/%.o: $(touchgfx_path)/%.c 
+	@echo Compiling $<
+	@mkdir -p $(@D)
+	@$(c_compiler) \
+		-MMD -MP $(c_compiler_options) $(user_cflags) \
+		$(patsubst %,-I%,$(include_paths)) \
+		-c $< -o $@
+
+$(object_output_path)/%.o: %.c 
+	@echo Compiling $<
+	@mkdir -p $(@D)
+	@$(c_compiler) \
+		-MMD -MP $(c_compiler_options) $(user_cflags) \
+		$(patsubst %,-I%,$(include_paths)) \
+		-c $< -o $@
+
+$(object_output_path)/%.o: %.s 
+	@echo Compiling ASM $<
+	@mkdir -p $(@D)
+	@$(assembler) \
+		$(assembler_options) \
+		$(patsubst %,-I %,$(os_include_paths)) \
+		-c $< -o $@
+
+ifeq ($(MAKECMDGOALS),build_executable)
+$(firstword $(dependency_files)): 
+	@rm -rf $(object_output_path)
+-include $(dependency_files)
+endif
+
+_clean_:
+	@echo Cleaning: $(board_name)
+	@rm -rf $(build_root_path)

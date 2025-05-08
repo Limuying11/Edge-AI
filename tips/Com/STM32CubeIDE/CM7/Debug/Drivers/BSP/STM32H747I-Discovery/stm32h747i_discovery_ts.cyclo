@@ -1,0 +1,14 @@
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:121:9:BSP_TS_Init	11
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:172:9:BSP_TS_DeInit	2
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:201:9:BSP_TS_GetCapabilities	2
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:223:9:BSP_TS_EnableIT	3
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:269:9:BSP_TS_DisableIT	2
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:305:13:BSP_TS_Callback	1
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:676:13:TS_EXTI_Callback	1
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:320:9:BSP_TS_GetState	11
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:406:9:BSP_TS_Get_MultiTouchState	12
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:497:9:BSP_TS_GestureConfig	2
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:522:9:BSP_TS_GetGestureId	10
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:579:9:BSP_TS_Set_Orientation	1
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:591:9:BSP_TS_Get_Orientation	1
+F:/Touchgfx/Com/Drivers/BSP/STM32H747I-Discovery/stm32h747i_discovery_ts.c:602:6:BSP_TS_IRQHandler	1

@@ -1,0 +1,15 @@
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:238:1:get_sof	30
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:621:1:examine_app0	19
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:697:1:examine_app14	7
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:728:1:get_interesting_appn	13
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:776:1:save_marker	18
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:882:1:skip_variable	6
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:911:1:next_marker	11
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:1159:1:read_restart_marker	5
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:1288:1:reset_marker_reader	1
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:424:1:get_dht	21
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:994:1:read_markers	117
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:1238:1:jpeg_resync_to_restart	9
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:1308:1:jinit_marker_reader	2
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:1346:1:jpeg_save_markers	8
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdmarker.c:1395:1:jpeg_set_marker_processor	3

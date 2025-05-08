@@ -1,0 +1,8 @@
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatasrc.c:46:1:init_source	0	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatasrc.c:59:1:init_mem_source	0	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatasrc.c:125:1:fill_mem_input_buffer	8	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatasrc.c:159:1:skip_input_data	16	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatasrc.c:99:1:fill_input_buffer	16	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatasrc.c:200:1:term_source	0	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatasrc.c:213:1:jpeg_stdio_src	24	static
+F:/Touchgfx/Com/Middlewares/Third_Party/LibJPEG/source/jdatasrc.c:252:1:jpeg_mem_src	16	static
